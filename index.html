@@ -1,4 +1,72 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Course Homepage</title>
+        <meta name="description" content="Course homepage that shows a little bit of myself and how many credits I already acquired">
+        <meta name="author" content="Victor Ongoli">
+        <link rel="stylesheet" href="styles/large.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <script src="scripts/course.js" defer></script>
+        <script src="scripts/dates.js" defer></script>
+        <script src="scripts/navigation.js" defer></script>
+    </head>
+
+    <body>
+
+        <header>
+            <img src="images/house.svg" alt="logo" width="1" height="1">
+            <span class="site" >Course Homepage</span>
+            <button id="nav-button" class="hamburger" arial-label="navigation"></button>
+        </header>
+        <nav id="menu" class="navigation">
+            <ul>
+                <li class="current"><a href="#">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Final</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>Home</h1>
+            <div class="section">
+                <section class="intro">
+                    <h2>About Me</h2>
+                    <p>My names are Victor Ongoli and am 22years old currently living in Nairobi Kenya. A little about myself is that I really like travelling in new places and meet new people, I do also like being alone in a quiet, especially in natural settings like in a forest or on a hill, where I take my time to meditate and contemplate. Currenting am an aspiring software developer, and am really looking forward to my software life career.</p>
+                </section>
+                <section class="pic">
+                    <h2>Profile</h2>
+                    <img src="images/myself.webp" alt="photo" width="1" height="1">
+                </section>
+            </div>
+
+            <section class="course-listing">
+                <h2>Web Certificate Courses</h2>
+                <nav class="filters">
+                    <ul id="filter" class="cert">
+                        <li><a href="#" class="active" data-filter="all">All Courses</a></li>
+                        <li><a href="#" data-filter="wdd">WDD Courses</a></li>
+                        <li><a href="#" data-filter="cse">CSE Courses</a></li>
+                    </ul>
+                </nav>
+                <div class="courses" id="courseContainer">
+                
+                </div>
+                <p>The total credits for courses listed above is <span id="credit"></span></p>
+            </section>
+        </main>
+
+        <footer>
+            <div class="logo">
+                <a href="index.html"><img src="images/linkedin.svg" alt="linkedin"></a></li>
+                <a href="index.html"><img src="images/github.svg" alt="github"></a></li>
+                <a href="index.html"><img src="images/twitter-x.svg" alt="X"></a></li>
+            </div>
+            <p><span id="current-year"></span> | Victor Ongoli | Kenya Nairobi</p>
+            <p><span id="last-modified"></span></p>
+        </footer>
+
+    </body>
 </html>
+

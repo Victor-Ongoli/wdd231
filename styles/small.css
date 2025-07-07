@@ -1,0 +1,224 @@
+main h1 {
+    padding: 0;
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    padding-bottom: .2rem;
+    background-color: rgb(0, 0, 135);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+
+}
+
+.logo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+}
+
+.logo a:hover {
+    background-color: red;
+}
+
+footer p {
+    color: rgb(248, 244, 244);
+}
+
+.logo img {
+    width: 30px;
+    height: 30px;
+    margin: 0 0.5em;
+}
+
+@media (max-width: 768px) {
+    header {
+        background-color: rgb(0, 0, 135);
+        display: grid;
+        grid-template-columns: 24px auto 44px;
+        padding: 0 0 5px 10px;
+        align-items: center;
+        column-gap: 8px;
+    }
+
+    header img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .hamburger {
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+
+    .hamburger::before {
+        content: "\2630";
+        font-size: 1.5rem;
+        color: white;
+    }
+    
+    .hamburger.show::before {
+        content: "\00D7"; 
+        font-size: 2rem;
+        color: white;
+    }
+
+    .site {
+        color: white;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .navigation.show {
+        display: block;
+    }
+
+    .navigation {
+        background-color: rgb(5, 5, 254);
+    }
+
+    .navigation ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navigation li {
+        display: none;
+        border: 1px solid #000;
+    }
+
+    .navigation li.current {
+        background-color: rgb(44, 44, 75);
+    }
+
+    .navigation a {
+        display: block;
+        padding: 0.8rem 10px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .navigation a:hover {
+        background-color: black;
+        color: white;
+    }
+    
+    .show li {
+        display: block;   
+    }
+
+    .section {
+        display: grid;
+        row-gap: 10px;
+    }
+
+    .intro {
+        border: 2px solid black;
+        background-color: rgb(243, 241, 241);
+    }
+
+    .intro h2 {
+        padding: 10px;
+        margin: 0;
+        background-color: rgb(0, 0, 135);
+        color: white;
+        text-align: center;
+    }
+
+    .intro p {
+        padding: 10px;
+    }
+
+    .pic {
+        border: 2px solid black;
+        background-color: rgb(164, 161, 161);
+        text-align: center;
+        row-gap: 10px;
+    }
+
+    .pic h2 {
+        padding: 10px;
+        margin: 0;
+        text-align: center;
+        background-color: rgb(0, 0, 135);
+        color: white;
+    }
+
+    .pic img {
+        width: 300px;
+        height: 300px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        border-radius: 20px;
+        padding: 10px;
+    }
+
+    .filters {
+        background-color: rgb(0, 0, 135);
+    }
+
+    .filters ul {
+        list-style: none;
+        display: flex;
+        padding: 0;
+    }
+
+    .filters li {
+        flex: 1 1 100%;
+    }
+
+    .filters a {
+        display: block;
+        padding: 0.75rem;
+        text-decoration: none;
+        color: white;
+    }
+
+    .filters a:hover {
+        background-color: #000;
+        color: #ccc;
+    }
+
+    .courses {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .course-listing p {
+        text-align: center;
+    }
+
+    .course-card {
+        background-color: #ccc;
+        border: 1px solid #999;
+        border-radius: 5px;
+        padding: 12px;
+        margin-bottom: 10px;
+        text-align: center;
+        font-weight: bold;
+        color: #000;
+    }
+
+    .course-card p {
+        margin: 0;
+    }
+
+    .completed-course::after {
+        content: '✓';
+        position: absolute;
+        left: 290px;
+        padding-top: 32px;
+    }
+
+}

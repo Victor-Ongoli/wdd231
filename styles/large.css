@@ -1,0 +1,162 @@
+@media (min-width: 768px) {
+    header, main, nav, footer {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 30px auto;
+        padding: 5px 0 5px 10px;
+        margin: 0 auto;
+        align-items: end;
+        column-gap: 8px;
+    }
+
+    .site {
+        font-size: 1.2rem;
+        color: black;
+    }
+
+    header button {
+        display: none;
+    }
+
+    header img {
+        display: block;
+        width: 100%;
+        height: auto;
+        color: black;
+    }
+
+    .navigation ul {
+        list-style-type: none;
+        display: flex;
+        padding: 0;
+        text-align: center;
+    }
+
+    .navigation li {
+        flex: 1 1 100%;
+        background-color: rgb(0, 0, 135);
+        border: 1px solid black;
+    }
+
+    .navigation a {
+        display: block;
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: white;
+        padding: 0.75rem;
+    }
+
+    .navigation a:hover {
+        background-color: rgb(8, 0, 0);
+        color: white;
+    }
+
+    .section {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 10px;
+        padding-top: 0;
+        margin-top: 0 auto;
+    }
+    
+    .intro {
+        border: 2px solid black;
+        background-color: rgb(243, 241, 241);
+    }
+
+    .intro h2 {
+        padding: 10px;
+        margin: 0;
+        background-color: rgb(0, 0, 135);
+        color: white;
+        text-align: center;
+    }
+
+    .intro p {
+        padding: 10px;
+    }
+
+    .pic {
+        border: 2px solid black;
+        background-color: rgb(243, 242, 242);
+    }
+
+    .pic h2 {
+        padding: 10px;
+        margin: 0;
+        text-align: center;
+        background-color: rgb(0, 0, 135);
+        color: white;
+    }
+
+    .pic img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+
+    .course-listing h2 {
+        background-color: rgb(0, 0, 135);
+        padding: 10px;
+        color: white;
+        text-align: center;
+    }
+
+    .course-listing p {
+        text-align: center;
+    }
+
+    .filters ul {
+        list-style-type: none;
+        display: flex;
+        column-gap: 12px;
+        padding: 0;
+        text-align: center;
+    }
+
+    .filters li {
+        flex: 1 1 100%;
+        background-color: rgb(5, 5, 254);;
+        border-radius: 5px;
+    }
+
+    .filters a {
+        display: block;
+        padding: 1rem;
+        text-decoration: none;
+        color: white;
+    }
+
+    .courses {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr)
+    }
+
+    .course-card {
+        background-color: rgb(5, 89, 146);
+        border: 1px solid #999;
+        border-radius: 5px;
+        margin: 5px; 
+        text-align: center;
+        font-weight: bold;
+        color: white;
+    }
+
+    .course-card p {
+        margin: 0;
+        padding-top: 10px;  
+    }
+
+    .completed-course::after {
+        content: '✓';
+        position: relative;
+        bottom: 22px;
+        left: 60px;
+        font-size: 1.2em;
+    }
+}
