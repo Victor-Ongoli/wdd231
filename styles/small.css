@@ -19,10 +19,6 @@ footer {
 
 }
 
-.logo li {
-    list-style-type: none;
-}
-
 .logo a {
     text-decoration: none;
     display: flex;
