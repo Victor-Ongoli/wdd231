@@ -2,7 +2,7 @@
     header {
         display: grid;
         grid-template-columns: 1fr;
-        background-color: #614419;
+        background-color: black;
         color: white;
     }
 
@@ -20,6 +20,7 @@
 
     .chamber {
         padding: 10px;
+        font-family: "Lilita One", sans-serif;
     }
 
     .hamburger {
@@ -49,7 +50,10 @@
     }
 
     .navigation {
-        background-color: #B37E2E;
+        background-color: black;
+        color: color;
+        padding: 0;
+        font-family: "Gruppo", sans-serif;
     }
 
     .navigation ul {
@@ -65,9 +69,9 @@
         border: 1px solid black;
     }
 
-    /* .navigation li.current {
-        background-color: rgb(24, 24, 151);
-    } */
+    .navigation li.current {
+        background-color: grey;
+    }
 
     .navigation a {
         display: block;
@@ -76,13 +80,16 @@
     }
 
     .navigation li:hover {
-        background-color: #614419;
+        background-color: rgb(103, 4, 4);
         transition: background-color 0.5s ease;
+        color: black;
     }
 
     main h1 {
-        padding: 0;
+        padding: 4px;
         margin: 0;
+        padding-left: 10px;
+        font-family: "Gruppo", sans-serif;
     }
 
     main img {
@@ -94,88 +101,147 @@
     .intro {
         display: grid; 
         grid-template-columns: 1fr;
-        row-gap: 20px;
+        row-gap: 10px;
     }
 
     .events {
         padding: 10px;
-        border: 1px solid black;
-        background-color: #614419;
+        background-color: black;
         color: white;
         border-radius: 10px;
+        font-family: "Lilita One", sans-serif;
     }
 
     .weather {
         padding: 10px;
-        border: 1px solid black;
-        background-color: #614419;
+        background-color: black;
         color: white;
         border-radius: 10px;
+        font-family: "Lilita One", sans-serif;
     }
 
     .forecast {
         padding: 10px;
-        border: 1px solid black;
-        background-color: #614419;
+        background-color: black;
         color: white;
         border-radius: 10px;
+        font-family: "Lilita One", sans-serif;
     }
 
     .display {
-        text-align: center;
-        padding: 10px;
+        border: 2px solid black;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        margin: 20px 0; 
     }
 
     .display button {
-        padding: 0.5rem 1rem;
-        font-weight: 700;
-        background-color: #614419;
+        background-color: indigo;
+        border-radius: 8px;
         color: white;
+        padding: 12px;
+        cursor: pointer;
+        width: 70px;
+        height: 60px;
+        transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin: 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .display button:hover {
+        background-color: #f5f5f5;
+        color: black;
+        box-shadow: 0 4px 8px black;
     }
 
     .menu {
         display: grid;
-        margin: 1rem auto;
-        padding: 0.5rem;
+        /* margin: 1rem auto; */
+        /* padding: 0.5rem; */
         grid-gap: 10px;
         grid-template-columns: 1fr;
+        font-family: "Lilita One", sans-serif;
     } 
-    
-    .grid {
-        display: grid;
-        align-items: center;
-        
-        section {
-            text-align: center;
-        }
-    }
-    
-    .list {
-        display: flex;
-        flex-direction: column;
 
-        section {
-            display: grid;
-            grid-template-columns: 0 1fr 1fr 1fr 1fr 1fr 1fr;
-            margin: 0;
-            padding: 0.25rem;
-        }
+    #business {
+        gap: 20px; 
     }
 
     .company-card {
         border: 1px solid black;
         text-align: center;
-        background-color: #614419;
+        background-color: black;
         color: white;
         border-radius: 5px;
+        padding: 5px;
         margin: 0;
+        border-radius: 10px;
+    }
+
+    #business.grid {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: minmax(280px, 1fr);
+    }
+
+    #business.list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #business.list .company-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        padding-bottom: 0;
+        text-align: center;
+    }
+    
+    #business.list .company-card h2 {
+        font-size: 1.2em;
+        
+    }
+
+    #business.list .company-card img {
+        display: none;
+    }
+    
+    .grid .company-card {
+        border: 1px solid black;
+        text-align: center;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        padding: 5px;
+        margin: 0;
+        border-radius: 10px;
+        min-height: 200px;
+    }
+
+    .list .company-card {
+        border: 1px solid black;
+        text-align: center;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        padding: 0;
+        margin: 0;
+        border-radius: 10px;
+    }
+
+    .company-card p {
+        margin-bottom: 5px;
+        font-weight: bold;
     }
 
     .company-card img {
         max-width: 100%;
         height: auto;
         max-height: 100px;
-        object-fit: cover;
+        object-fit: contain;
         margin-bottom: 15px;
         border-radius: 4px;   
         background-color: white;
@@ -184,20 +250,33 @@
     .company-card a {
         text-decoration: none;
         color: white;
+        display: block;
+        text-overflow: ellipsis;
+        transition: color 0.3s ease, background-color 0.3s ease;
     }
 
     .company-card a:hover {
-        background-color: brown;
+        background-color: white;
+        color: black;
+        border-radius: 4px;
     }
 
     footer {
-        background-color: #614419;
+        background-color: black;
         margin: 0;
         padding: 0;
+        font-family: "Lilita One", sans-serif;
+    }
+
+    .smaller {
+        color: white;
+        padding-left: 10px;
     }
 
     .social {
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .social img {
@@ -205,11 +284,9 @@
         height: 30px;
     }
 
-    .smaller {
-        color: white;
-    }
-
     .bigger {
         color: white;
+        padding-left: 20px;
+        padding: 5px;
     }
 }

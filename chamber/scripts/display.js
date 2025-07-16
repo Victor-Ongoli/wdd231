@@ -1,6 +1,6 @@
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
-const display = document.querySelector("article");
+const display = document.querySelector("#business");
 
 gridbutton.addEventListener("click", () => {
     display.classList.add("grid");
@@ -14,8 +14,8 @@ function showList() {
     display.classList.remove("grid");
 }
 
-// const currentYear = new Date().getFullYear();
-// const lastModified = document.lastModified;
+const currentYear = new Date().getFullYear();
+const lastModified = document.lastModified;
 
-// document.querySelector("#current-year").textContent = `© ${currentYear}`;
-// document.querySelector("#last-modified").textContent = `${lastModified}`;
+document.querySelector("#current-year").textContent = `© ${currentYear}`;
+document.querySelector("#last-modified").textContent = `${lastModified}`;
