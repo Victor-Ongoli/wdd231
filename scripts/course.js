@@ -116,13 +116,13 @@ function displayCourses(filter) {
 
     if (filteredCourses.length === 0) {
         courseContainer.innerHTML = '<p class="no-courses-message">No courses found for this filter.</p>';
-        totalCreditsSpan.textContent = 0; // Set credits to 0 if no courses
+        totalCreditsSpan.textContent = 0;
         return;
     }
 
     filteredCourses.forEach(course => {
         const card = createCourseCard(course);
-        if (card) { // Always good to check if the card was successfully created
+        if (card) {
             courseContainer.appendChild(card);
         }
     });

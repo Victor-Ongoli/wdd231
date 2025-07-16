@@ -19,6 +19,7 @@ footer {
 
 }
 
+
 .logo a {
     text-decoration: none;
     display: flex;
@@ -32,7 +33,9 @@ footer {
 }
 
 footer p {
-    color: rgb(248, 244, 244);
+    background-color: #0404fc;
+    color: rgb(139, 156, 69);
+
 }
 
 .logo img {
