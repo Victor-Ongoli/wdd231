@@ -12,7 +12,7 @@ const lat = "-1.272273"
 const long = "36.726438"
 
 const currentUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=metric&appid=${key}`;
-const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&units=metric&cnt=4&appid=${key}`;
+const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&appid=${key}`;
 
 
 async function apiFetch() {
@@ -51,7 +51,7 @@ function displayCurrentWeather(data) {
 function displayForecast(data) {
     forecast.innerHTML = '';
 
-    if (!data.list || data.list.length < 4) {
+    if (!data.list || data.list.length < 24) {
         console.error('Not enough forecast data available');
         forecast.innerHTML = '<p>Forecast data not available</p>';
         return;
