@@ -59,17 +59,77 @@
         color: black;
     }
 
+    .hero {
+        position: relative;
+    }
+
+    .hero img {
+       width: 100%;
+       height: 400px;
+       object-fit: cover; 
+    }
+
+    .hero-content {
+        position: absolute;
+        background-color: black;
+        top: 200px;
+        right: 10px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .hero-content a {
+        text-align: center;
+        text-decoration: none;
+        color: white;
+    }
+
+    .hero-content:hover {
+        background-color: blue;
+    }
+
+    .current-events {
+        padding: 10px;
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+        font-family: "Lilita One", sans-serif;
+    }
+
+    .local-weather {
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+        padding-top: 5px;
+        text-align: center;
+    }
+
+    .forecast-grid {
+        background-color: black;
+        border-radius: 10px;
+        color: white;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: center;
+    }
+
+    .spotlight-cube {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        padding-bottom: 10px;
+    }
+
+    .spotlight-cube img {
+        width: 100%;
+        height: auto;
+    }
+
     main h1 {
         padding: 4px;
         margin: 0;
         padding-left: 10px;
         font-family: "Gruppo", sans-serif;
-    }
-
-    main img {
-        width: 100%;
-        height: 100px;
-        object-fit: cover;
     }
 
     .intro {
@@ -223,7 +283,7 @@
         color: white;
         display: block;
         text-overflow: ellipsis;
-        transition: color 0.3s ease, background-color 0.3s ease;
+        transition: color 0.3s ease,background-color 0.3s ease;
     }
 
     .company-card a:hover {
