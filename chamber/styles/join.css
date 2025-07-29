@@ -30,7 +30,7 @@ main {
 
 .fill-form input[type="text"],
 .fill-form input[type="email"],
-.fill-form input[type="telephone"],
+.fill-form input[type="tel"],
 .fill-form textarea,
 .fill-form select {
     width: 100%;
