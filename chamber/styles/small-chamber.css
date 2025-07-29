@@ -320,6 +320,16 @@
         border-radius: 4px;
     }
 
+
+
+    .thankyou {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 5px;
+        /* gap: 10px; */
+}
+
     footer {
         background-color: black;
         margin: 0;

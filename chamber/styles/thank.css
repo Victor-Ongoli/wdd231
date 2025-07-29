@@ -1,0 +1,26 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.thankyou {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.thankyou a {
+    text-decoration: none;
+    color: white;
+    /* border: 2px solid white; */
+    padding: 10px;
+    background-color: blue;
+}
+
+.thankyou a:hover {
+    background-color: red;
+    color: white;
+}

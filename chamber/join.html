@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor Ongoli Course Homepage</title>
+    <meta name="description"
+        content="Course homepage that shows a little bit of myself and how many credits I already acquired">
+    <meta name="author" content="Victor Ongoli">
+    <meta property="og:title" content="Victor Ongoli's Course Homepage: Chamber of Commerce Project">
+    <meta property="og:description"
+        content="Explore Victor Ongoli's WDD231 class project - a Chamber of Commerce site showcasing local businesses, weather, and personal insights.images/favicon">
+    <meta property="og:image" content="https://victor-ongoli.github.io/wdd231/chamber/images/cityhall.jpg">
+    <meta property="og:url" content="https://victor-ongoli.github.io/wdd231/chamber/directory.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gruppo&family=Lilita+One&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/small-chamber.css">
+    <link rel="stylesheet" href="styles/large-chamber.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/data.js" defer></script>
+    <script src="scripts/display.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="home">
+            <img src="images/house.svg" alt="homepage icon" width="1" height="1">
+            <span class="chamber">Chamber of Commerce</span>
+            <button id="nav-button" class="hamburger"></button>
+        </div>
+
+        <nav id="menu" class="navigation">
+            <ul>
+                <li><a href="directory.html">Home</a></li>
+                <li><a href="index.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="userform">
+            <form id="joinForm" method="post" action="thankyou.html" class="fill-form">
+                <div>
+                    <label for="firstname">
+                        First name
+                        <input type="text" name="firstname" id="firstname" required autocomplete="given-name" title="Enter your first name" />
+                    </label>
+                </div>
+                <div>
+                    <label for="lastname">
+                        Last name
+                        <input type="text" name="lastname" id="lastname" required autocomplete="family-name" title="Enter your last name"/>
+                    </label>
+                </div>
+                <div>
+                    <label for="title">
+                        Organizational Title
+                        <input type="text" name="title" id="title" required autocomplete="organization-title" title="Enter your organizational title (e.g., manager). Must be at least 7 characters and contain only letters, hypens, or space." pattern="^[a-zA-Z -]{7,}$"/>
+                    </label>
+                </div>
+                <div>
+                    <label for="email">
+                        Email address
+                        <input type="email" name="email" id="email" required autocomplete="email" title="Enter your email address" placeholder="name@example.com"/>
+                    </label>
+                </div>
+                <div>
+                    <label for="number">
+                        Phone number
+                        <input type="telephone" name="number" id="number" required autocomplete="tel" title="Enter your phone number"/>
+                    </label>
+                </div>
+                <div>
+                    <label for="business">
+                        Business/organization's name
+                        <input type="text" name="business" id="business" required autocomplete="given-name" title="Enter the name of your organization"/>
+                    </label>
+                </div>
+                <div>
+                    <label for="membership">
+                        Membership level
+                        <select id="membership" name="membershipLevel" required autocomplete="off" title="Select your desired membership level">
+                            <option value disabled selected>
+                            Select membership level...</option>
+                            <option value="Non-profit">Non-profit Membership level</option>
+                            <option value="Bronze">Bronze Membership Level</option>
+                            <option value="Silver">Silver Membership Level</option>
+                            <option value="Gold">Gold Membership Level</option>
+                        </select>
+                    </label>
+                </div>
+                <div>
+                    <label for="description">
+                        Description
+                        <textarea name="description" id="description" required autocomplete="off" title="Provide a brief description of your organization"></textarea>
+                    </label>
+                </div>
+                <div>
+                    <!-- <label for="time"> -->
+                        <!-- Timestamp -->
+                    <input type="hidden" name="timestamp" id="timestamp"/>
+                    <!-- </label> -->
+                </div>
+                <div>
+                    <input type="submit" value="subscribe!"/>
+                </div>
+            </form>
+        </section>
+
+        <div class="membership">
+            <section class="first-membership">
+                <p>Non-profit Membership Level</p>
+                <button id="npButton">Learn more</button>
+                <dialog id="npBox">
+                    <p>Membership cost: free</p>
+                    <p>Benefits: Events discount</p>
+                    <button id="npCloseButton">Close</button>
+                </dialog>
+            </section>
+
+            <section class="second-membership">
+                <p>Bronze Membership Level</p>
+                <button id="bronzeButton">Learn more</button>
+                <dialog id="bronzeBox">
+                    <p>Membership cost: Events discount, and Special events</p>
+                    <p>Benefits: $100</p>
+                    <button id="closeBronze">Close</button>
+                </dialog>
+            </section>
+
+            <section class="third-membership">
+                <p>Silver Membership Level</p>
+                <button id="silverButton">Learn more</button>
+                <dialog id="silverBox">
+                    <p>Membership cost: $200</p>
+                    <p>Benefits: Events discount, Special events and Training</p>
+                    <button id="closeSilver">Close</button>
+                </dialog>
+            </section>
+            
+            <section class="four-membership">
+                <p>Gold Membership Level</p>
+                <button id="goldButton">Learn more</button>
+                <dialog id="goldBox">
+                    <p>Membership cost: $300</p>
+                    <p>Benefits: Events discount, Special events, Training and vip access</p>
+                    <button id="closeGold">Close</button>
+                </dialog>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <section class="smaller">
+            <h2>Nairobi Chamber of Commerce</h2>
+            <p> 29 Upperhill rd</p>
+            <p>Nairobi, Kenya</p>
+            <p>info@nairobicompanies.org</p>
+            <p>(+254)743 795 395</p>
+        </section>
+        <section class="social">
+            <a href=""><img src="images/facebook.svg" alt="facebook"></a>
+            <a href=""><img src="images/linkedin.svg" alt="linkedin"></a>
+            <a href=""><img src="images/twitter-x.svg" alt="twitter-x"></a>
+        </section>
+        <section class="bigger">
+            <p>WDD231 Class Project</p>
+            <p>Victor Ongoli</p>
+            <p><span id="current-year"> Chamber of Commerce</span></p>
+            <p>Last Updated: <span id="last-modified"></span></p>
+        </section>
+    </footer>
+
+</body>
+
+</html>

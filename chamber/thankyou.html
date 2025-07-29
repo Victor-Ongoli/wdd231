@@ -10,7 +10,8 @@
         content="Course homepage that shows a little bit of myself and how many credits I already acquired">
     <meta name="author" content="Victor Ongoli">
     <meta property="og:title" content="Victor Ongoli's Course Homepage: Chamber of Commerce Project">
-    <meta property="og:description" content="Explore Victor Ongoli's WDD231 class project - a Chamber of Commerce site showcasing local businesses, weather, and personal insights.images/favicon">
+    <meta property="og:description"
+        content="Explore Victor Ongoli's WDD231 class project - a Chamber of Commerce site showcasing local businesses, weather, and personal insights.images/favicon">
     <meta property="og:image" content="https://victor-ongoli.github.io/wdd231/chamber/images/cityhall.jpg">
     <meta property="og:url" content="https://victor-ongoli.github.io/wdd231/chamber/directory.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,11 +20,14 @@
         href="https://fonts.googleapis.com/css2?family=Gruppo&family=Lilita+One&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
     <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/thank.css">
     <link rel="stylesheet" href="styles/small-chamber.css">
     <link rel="stylesheet" href="styles/large-chamber.css">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/data.js" defer></script>
     <script src="scripts/display.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+    
 
 </head>
 
@@ -34,7 +38,7 @@
         <div class="home">
             <img src="images/house.svg" alt="homepage icon" width="1" height="1">
             <span class="chamber">Chamber of Commerce</span>
-            <button id="nav-button" class="hamburger" ></button>
+            <button id="nav-button" class="hamburger"></button>
         </div>
 
         <nav id="menu" class="navigation">
@@ -49,46 +53,19 @@
     </header>
 
     <main>
+        <section class="thankyou">
+            <p>Thank you for taking time in filling the form, our team will get in touch with you after a careful examination of your submitted form.</p>
+            <div class="submission-details">
+                <h2>Your Submission Details:</h2>
+                <p><strong>Name:</strong> <span id="display-firstName"></span> <span id="display-lastName"></span></p>
+                <p><strong>Email:</strong> <span id="display-email"></span></p>
+                <p><strong>Phone Number:</strong> <span id="display-phoneNumber"></span></p>
+                <p><strong>Business/Organization:</strong> <span id="display-businessName"></span></p>
+                <p><strong>Date Submitted:</strong> <span id="display-submissionDate"></span></p>
+            </div>
         
-        <img src="images/cityhall.jpg" alt="background" width="1" height="1">
-        <h1>Home</h1>
-        <div class="intro">
-
-            <section class="events">
-                <h2>Events</h2>
-                <p>My names are Victor Ongoli and am 22years old currently living in Nairobi Kenya. A little about myself is that I really
-                like travelling in new places and meet new people, I do also like being alone in a quiet, especially in natural settings
-                like in a forest or on a hill, where I take my time to meditate and contemplate. Currenting am an aspiring software
-                developer, and am really looking forward to my software life career.</p>
-            </section>
-            <section class="weather">
-                <h2>Current Weather</h2>
-                <p>75F</p>
-                <p>Partly Cloudy</p>
-                <p>High: 85</p>
-                <p>Low: 52</p>
-                <p>Humidity: 34%</p>
-                <p>Sunsrise: 6:30am </p>
-                <p>Sunset: 7.00pm</p>
-            </section>
-            <section class="forecast">
-                <h2>Weather Forecast</h2>
-                <p>Today: 90F</p>
-                <p>Wednesday: 80 F</p>
-                <p>Thursday: 72F</p>
-            </section>
-
-        </div>
-
-        <div class="display">
-            <button id="grid">Grid</button>
-            <button id="list">List</button>
-        </div>
-
-        <article class="slots">
-            <div id="business" class="menu"></div>
-        </article>
-        
+        <p class="return-home"><a href="index.html">Return to Homepage</a></p>
+        </section>
     </main>
 
     <footer>
