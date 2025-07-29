@@ -53,43 +53,43 @@
 
     <main>
         <!-- <h1>User form</h1> -->
-        <section class="userform">
+        <div class="userform">
             <h1>User form</h1>
             <form id="joinForm" method="post" action="thankyou.html" class="fill-form">
                 <div>
                     <label for="firstname">
                         First name
-                        <input type="text" name="firstname" id="firstname" required autocomplete="given-name" title="Enter your first name" />
+                        <input type="text" name="firstname" id="firstname" required autocomplete="given-name" title="Enter your first name">
                     </label>
                 </div>
                 <div>
                     <label for="lastname">
                         Last name
-                        <input type="text" name="lastname" id="lastname" required autocomplete="family-name" title="Enter your last name"/>
+                        <input type="text" name="lastname" id="lastname" required autocomplete="family-name" title="Enter your last name">
                     </label>
                 </div>
                 <div>
                     <label for="title">
                         Organizational Title
-                        <input type="text" name="title" id="title" required autocomplete="organization-title" title="Enter your organizational title (e.g., manager). Must be at least 7 characters and contain only letters, hypens, or space." pattern="^[a-zA-Z -]{7,}$"/>
+                        <input type="text" name="title" id="title" required autocomplete="organization-title" title="Enter your organizational title (e.g., manager). Must be at least 7 characters and contain only letters, hypens, or space." pattern="^[a-zA-Z -]{7,}$">
                     </label>
                 </div>
                 <div>
                     <label for="email">
                         Email address
-                        <input type="email" name="email" id="email" required autocomplete="email" title="Enter your email address" placeholder="name@example.com"/>
+                        <input type="email" name="email" id="email" required autocomplete="email" title="Enter your email address" placeholder="name@example.com">
                     </label>
                 </div>
                 <div>
                     <label for="number">
                         Phone number
-                        <input type="telephone" name="number" id="number" required autocomplete="telephone" title="Enter your phone number"/>
+                        <input type="telephone" name="number" id="number" title="Enter your phone number">
                     </label>
                 </div>
                 <div>
                     <label for="business">
                         Business/organization's name
-                        <input type="text" name="business" id="business" required autocomplete="given-name" title="Enter the name of your organization"/>
+                        <input type="text" name="business" id="business" required autocomplete="given-name" title="Enter the name of your organization">
                     </label>
                 </div>
                 <div>
@@ -112,19 +112,16 @@
                     </label>
                 </div>
                 <div>
-                    <!-- <label for="time"> -->
-                        <!-- Timestamp -->
-                    <input type="hidden" name="timestamp" id="timestamp"/>
-                    <!-- </label> -->
+                    <input type="hidden" name="timestamp" id="timestamp">
                 </div>
                 <div>
-                    <input type="submit" value="subscribe!"/>
+                    <input type="submit" value="subscribe!">
                 </div>
             </form>
-        </section>
+        </div>
 
         <div class="membership">
-            <section class="first-membership">
+            <div class="first-membership">
                 <p>Non-profit Membership Level</p>
                 <button id="npButton">Learn more</button>
                 <dialog id="npBox">
@@ -132,9 +129,9 @@
                     <p>Benefits: Events discount</p>
                     <button id="npCloseButton">Close</button>
                 </dialog>
-            </section>
+            </div>
 
-            <section class="second-membership">
+            <div class="second-membership">
                 <p>Bronze Membership Level</p>
                 <button id="bronzeButton">Learn more</button>
                 <dialog id="bronzeBox">
@@ -142,9 +139,9 @@
                     <p>Benefits: $100</p>
                     <button id="closeBronze">Close</button>
                 </dialog>
-            </section>
+            </div>
 
-            <section class="third-membership">
+            <div class="third-membership">
                 <p>Silver Membership Level</p>
                 <button id="silverButton">Learn more</button>
                 <dialog id="silverBox">
@@ -152,9 +149,9 @@
                     <p>Benefits: Events discount, Special events and Training</p>
                     <button id="closeSilver">Close</button>
                 </dialog>
-            </section>
+            </div>
             
-            <section class="four-membership">
+            <div class="four-membership">
                 <p>Gold Membership Level</p>
                 <button id="goldButton">Learn more</button>
                 <dialog id="goldBox">
@@ -162,7 +159,7 @@
                     <p>Benefits: Events discount, Special events, Training and vip access</p>
                     <button id="closeGold">Close</button>
                 </dialog>
-            </section>
+            </div>
         </div>
     </main>
 
