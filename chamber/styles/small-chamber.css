@@ -59,6 +59,12 @@
     grid-area: image;
     display: block;
     grid-area: image;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#area div img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 #area div p {
