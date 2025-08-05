@@ -1,4 +1,76 @@
-@media (max-width: 768px) {
+
+.message {
+    padding: 15px;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+#area div {
+    margin: 4px;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 0 10px 10px 10px;
+    column-gap: 10px;
+
+    display: grid;
+    grid-template-areas: 
+    "title"
+    "image"
+    "address"
+    "description"
+    "website";
+}
+
+.box a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(2, 40, 80);
+    font-weight: 700;
+    padding: 5px;
+    grid-area: title;
+    border-radius: 10px;
+}
+
+.box a:hover {
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+#area div h2 {
+    color: gold;
+    grid-area: title;
+    grid-gap: 5px;
+}
+
+#area div address {
+    grid-area: address;
+}
+
+#area div img {
+    width: 100%;
+    height: 300px;
+    grid-area: image;
+    display: block;
+    grid-area: image;
+}
+
+#area div p {
+    grid-area: description;
+}
+
+#area div a {
+    grid-area: website;
+
+}
+
+@media (max-width: 728px) {
     header {
         display: grid;
         grid-template-columns: 1fr;
@@ -13,7 +85,6 @@
     }
 
     .home img {
-        /* display: block; */
         width: 44px;
         height: 44px;
     }
@@ -219,8 +290,6 @@
 
     .menu {
         display: grid;
-        /* margin: 1rem auto; */
-        /* padding: 0.5rem; */
         grid-gap: 10px;
         grid-template-columns: 1fr;
         font-family: "Lilita One", sans-serif;
@@ -319,16 +388,6 @@
         color: black;
         border-radius: 4px;
     }
-
-
-
-    .thankyou {
-        background-color: black;
-        color: white;
-        text-align: center;
-        padding: 5px;
-        /* gap: 10px; */
-}
 
     footer {
         background-color: black;

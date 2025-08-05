@@ -1,0 +1,52 @@
+{
+    "interests": [
+        {
+            "title": "Real Estate",
+            "address": "Nairobi",
+            "image": "images/real-estate.webp",
+            "description": "Real estate is a booming industry in where I live there is alot of this going on including Kenza projects"
+        },
+        {
+            "title": "Farming",
+            "address": "Nairobi",
+            "image": "images/farming.webp",
+            "description": "Farming is what feeds the whole nation thus an area of interest to dive into."
+        },
+        {
+            "title": "Transport",
+            "address": "Nairobi",
+            "image": "images/matatu.webp",
+            "description": "Nairobi has a rich culture of buses extremely modified to look like clubs on wheel, which is very interesting."
+        },
+        {
+            "title": "Cultures",
+            "address": "Nairobi",
+            "image": "images/tribes.webp",
+            "description": "With over 48 different tribes or culture, Kenya offers a rich history of different tribes living together."
+        },
+        {
+            "title": "Shopping areas",
+            "address": "Nairobi",
+            "image": "images/mall.webp",
+            "description": "Hosting the second largest shopping mall in the whole of Africa, Nairobi is definitely a place for thrift shoppers."
+        },
+        {
+            "title": "Technology",
+            "address": "Nairobi",
+            "image": "images/tech.webp",
+            "description": "Nairobi as seen as the center hub for east and central Africa, has alot of technological advancements to offer."
+        },
+        {
+            "title": "Hospitality",
+            "address": "Nairobi",
+            "image": "images/hospitality.webp",
+            "description": "Kenyas are a very hospitable people we love foreigners, there are lots of places for foreigners to spend quality and comfortble time in kenya, and the food prepared will leave you linking your fingers."
+        },
+        {
+            "title": "Tourism",
+            "address": "Nairobi",
+            "image": "images/tourism.webp",
+            "description": "Regarded as one of the most frequently visited country worldwide, Kenya offers a haven for tourists, for it's unique wildlife."
+        }
+    ]
+}

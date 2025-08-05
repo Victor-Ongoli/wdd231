@@ -1,0 +1,22 @@
+@media only screen and (min-width: 38rem) {
+
+    #area div {
+        padding: 10px 10px 10px 10px;
+        grid-template-areas: 
+        "image title"
+        "image address"
+        "image description"
+        "image website";
+    }
+
+    #area div address {
+        grid-area: address;
+    }
+
+    #area div img {
+        width: 300px;
+        height: 100%;
+        grid-area: image;
+    }
+
+}
