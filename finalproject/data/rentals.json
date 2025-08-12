@@ -1,0 +1,40 @@
+{
+    "rentals": [
+        {
+            "Size": "2 bedroom",
+            "location": "Kisii",
+            "price": "kshs.2,000,000",
+            "image": "images/apartment1.webp"
+        },
+        {
+            "Size": "4 bedroom",
+            "location": "Nairobi",
+            "price": "kshs.10,000,000",
+            "image": "images/apartment2.webp"
+        },
+        {
+            "Size": "Bedsitter",
+            "location": "Eldoret",
+            "price": "kshs.13,000,000",
+            "image": "images/apartment3.webp"
+        },
+        {
+            "Size": "1 bedroom",
+            "location": "Mombasa",
+            "price": "kshs.7,000,000",
+            "image": "images/apartment1.webp"
+        },
+        {
+            "Size": "3 bedroom",
+            "location": "Nakuru",
+            "price": "kshs.4,000,000",
+            "image": "images/apartment1.webp"
+        },
+        {
+            "Size": "AirBnB",
+            "location": "Kisumu",
+            "price": "kshs.6,000,000",
+            "image": "images/apartment6.webp"
+        }
+    ]
+}

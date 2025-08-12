@@ -1,0 +1,47 @@
+{
+    "houses": [
+        {
+            "housetype": "Karen villa",
+            "location": "Taita Taveta",
+            "price": "kshs.10,000,000",
+            "image": "images/image1.webp",
+            "yearbuilt": 2021
+        },
+        {
+            "housetype": "Lavigton villa",
+            "location": "Kiambu",
+            "price": "kshs.22,000,000",
+            "image": "images/image2.webp",
+            "yearbuilt": 2020
+        },
+        {
+            "housetype": "Runda villa",
+            "location": "Nairobi",
+            "price": "kshs.10,000,000",
+            "image": "images/image3.webp",
+            "yearbuilt": 2023
+        },
+        {
+            "housetype": "Kilimani villa",
+            "location": "Eldoret",
+            "price": "kshs.6,000,000",
+            "image": "images/image4.webp",
+            "yearbuilt": 2022
+        },
+        {
+            "housetype": "Kileleshwa villa",
+            "location": "Mombasa",
+            "price": "kshs.3,000,000 ",
+            "image": "images/image5.webp",
+            "yearbuilt": 2018
+        },
+        {
+            "housetype": "6 Oceanfront villa",
+            "location": "Nakuru",
+            "price": "kshs.2,000,000 ",
+            "image": "images/image6.webp",
+            "yearbuilt": 2016
+        }
+    ]
+        
+}

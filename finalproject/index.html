@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenga Homes</title>
+    <meta name="description" content="Your dream home awaits! Browse our exceptional properties, each designed to meet your unique needs. Visit today and fall in love with the perfect fit.">
+    <meta name="author" content="Victor Ongoli">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://victor-ongoli.github.io/wdd231/chamber/.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gruppo&family=Lilita+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/display.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <img src="images/image.png" alt="logo" width="1" height="1" loading="lazy">
+        <span>Homepage</span>
+        <button id="navButton" class="hamburger"></button>
+    </header>
+    <nav id="menu" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="listing.html">Properties</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+
+        <h1 class="first">About</h1>
+
+        <div class="about">
+            <p>Jenga Homes is an upcoming website with a vast information on real estate, from building to owning, Jenga homes has you covered.</p>
+        </div>
+
+        <div class="hero">
+
+        </div>
+        
+        <section class="mission">
+            <h2>Our mission</h2>
+            <p>Buying or building a home has often been a long and tiresome process that sometimes, also leads to debts and running into issues. Jenga homes provides solutions to all issues related to real estate and offers different options for you to acquire or build your dream house. Our website will introduce you to some of our services and properties on sale country wide and get you in touch with experts who will provide you with top notch professional advice.</p>
+        </section>
+
+        <div class="slider">
+
+            <div class="slides">
+                <img class="silde" src="images/heroimage.webp" alt="real estate" loading="lazy">
+                <img class="silde" src="images/heroimage1.webp" alt="real estate" loading="lazy">
+                <img class="silde" src="images/heroimage2.webp" alt="real estate" loading="lazy">
+                <img class="silde" src="images/heroimage3.webp" alt="real estate" loading="lazy">
+                <img class="silde" src="images/heroimage4.webp" alt="real estate" loading="lazy">
+            </div>
+
+            <button class="prev" onclick="prevSlide()">&#10094</button>
+            <button class="next" onclick="nextSlide()">&#10095</button>
+
+        </div>
+
+        <section class="why">
+            <h2>Why Us?</h2>
+            <h3>Expert Support</h3>
+            <p>We have a qualified experienced team, who are really experienced and dedicated individuals, ready to share and put to practice their expertise.</p>
+            <h3>Personalized Experience</h3>
+            <p>We believe that different people have different taste and preferences and with this we made sure that for every client we add details and their personal touch to the house.</p>
+            <h3>Technology insipired</h3>
+            <p>In this age where technology is the main aspect of our daily life, we are continually evolving with the latest technology to make your home future friendly.</p>
+        </section>
+
+        <section class="closing">
+            <button id="openButton">Learn more</button>
+            <dialog id="portfolio">
+                <p>Currently am still buidling this website and no much information is available, kindly visit again.</p>
+                <button id="closeButton">Close</button>
+            </dialog>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="handles">
+            <a href="https://www.linkedin.com/"><img src="images/linkedin.svg" alt="linkedin" width="1" height="1" loading="lazy"></a>
+            <a href="https://www.facebook.com/"><img src="images/facebook.svg" alt="github forum" width="1" height="1" loading="lazy"></a>
+            <a href="https://twitter.com/"><img src="images/twitter-x.svg" alt="twitter-X" width="1" height="1" loading="lazy"></a>
+            <p><span id="current-year"></span> | Victor Ongoli | Nairobi</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

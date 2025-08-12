@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="author" content="Victor Ongoli">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/display.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <img src="images/image.png" alt="logo" width="1" height="1" loading="lazy">
+        <span>Homepage</span>
+        <button id="navButton" class="hamburger"></button>
+    </header>
+    <nav id="menu" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="listing.html">Properties</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <h1>Have Questions of Need assistance?</h1>
+        <p>Fill out the form below and one of our support team will get back to you.</p>
+        <div class="form-fill">
+            <form id="enquiryForm" method="post" action="response.html" class="user">
+
+                <div>
+                    <label for="firstname">
+                        First name
+                        <input type="text" name="firstname" id="firstname" required autocomplete="name" title="Enter your first name">
+                    </label>
+                </div>
+
+                <div>
+                    <label for="lastname">
+                        Last name
+                        <input type="text" name="lastname" id="lastname" required autocomplete="family-name" title="Enter your last name">
+                    </label>
+                </div>
+
+                <div>
+                    <label for="location">
+                        Current Location
+                        <input type="text" name="location" id="location" autocomplete="location" title="Enter your location">
+                    </label>
+                </div>
+
+                <div>
+                    <label for="email">
+                        Email address
+                        <input type="email" name="email" id="email" autocomplete="email" title="Enter your email address" placeholder="name@gmail.com">
+                    </label>
+                </div>
+
+                <div>
+                    <label for="search">
+                        Looking for?
+                        <select id="search" name="search" required autocomplete="off" title="Select your desired option">
+                            <option value disabled selected>
+                            What are you looking for...</option>
+                            <option value="buy">Buy a house</option>
+                            <option value="build">Build a house</option>
+                            <option value="sell">Sell a house</option>
+                            <option value="undecided">Not sure</option>
+                            </select>
+                    </label>
+                </div>
+
+                <div>
+                    <label for="description">
+                        Additional description
+                        <textarea name="description" id="description" autocomplete="off" title="Provide a brief description of what you need or any specifications"></textarea>
+                    </label>
+                </div>
+
+                <div>
+                    <input type="hidden" name="timestamp" id="timestamp">
+                </div>
+
+                <div>
+                    <input type="submit" value="subscribe!">
+                </div>
+
+            </form>
+        </div>
+
+        <section class="founder">
+            <h2>Meet our Founder</h2>
+            <h3>CEO & Co-Founder</h3>
+            <p>Victor Asumba</p>
+            <p>A student in BYU Idaho College currenting pursing software development, a highly outgoing and dedicated person with a strong desire to change the world for a better future.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="handles">
+            <a href="https://www.linkedin.com/"><img src="images/linkedin.svg" alt="linkedin" width="1" height="1"
+                    loading="lazy"></a>
+            <a href="https://www.facebook.com/"><img src="images/facebook.svg" alt="github forum" width="1" height="1"
+                loading="lazy"></a>
+            <a href="https://twitter.com/"><img src="images/twitter-x.svg" alt="twitter-X" width="1" height="1"
+                loading="lazy"></a>
+            <p><span id="current-year"></span> | Victor Ongoli | Nairobi</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

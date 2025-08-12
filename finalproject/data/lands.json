@@ -1,0 +1,46 @@
+{
+    "lands": [
+        {
+            "title": "Leash",
+            "size": "90acres",
+            "location": "Nakuru",
+            "price": "kshs.12,000,000 ",
+            "image": "images/land1.webp"
+        },
+        {
+            "title": "On sale",
+            "size": "40acres",
+            "location": "Kiambu",
+            "price": "kshs.22,000,000 ",
+            "image": "images/land2.webp"
+        },
+        {
+            "title": "On sale",
+            "size": "120acres",
+            "location": "Nairobi",
+            "price": "kshs.37,000,000 ",
+            "image": "images/land3.webp"
+        },
+        {
+            "title": "Sale/leash",
+            "size": "250 Acres",
+            "location": "Mombasa",
+            "price": "kshs.32,000,000",
+            "image": "images/land4.webp"
+        },
+        {
+            "title": "Leash",
+            "size": "100 Acres",
+            "location": "Nakuru",
+            "price": "kshs.16,000,000",
+            "image": "images/land5.webp"
+        },
+        {
+            "title": "On sale",
+            "size": "200 Acres",
+            "location": "Kisumu",
+            "price": "kshs.20,000,000",
+            "image": "images/land6.webp"
+        }
+    ]
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="author" content="Victor Ongoli">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/display.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <img src="images/image.png" alt="logo" width="1" height="1" loading="lazy">
+        <span>Homepage</span>
+        <button id="navButton" class="hamburger"></button>
+    </header>
+    <nav id="menu" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="listing.html">Properties</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <h1>User recorded info</h1>
+
+        <div class="received">
+
+            <p>Thank you for taking your time to visit our website and reaching us out, we will get back to you in the next one hour.</p>
+
+            <section class="submission">
+                <h3>Your submission details</h3>
+
+                <p><strong>Name:</strong> <span id="display-firstName"></span> <span id="display-lastName"></span></p>
+
+                <p><strong>Location:</strong> <span id="display-location"></span></p>
+
+                <p><strong>Email:</strong> <span id="display-email"></span></p>
+
+                <p><strong>Looking forward to:</strong> <span id="display-reason"></span></p>
+
+                <p><strong>Your description:</strong> <span id="display-description"></span></p>
+
+                <p><strong>Date Submitted:</strong> <span id="display-submissionDate"></span></p>
+
+            </section>
+            <div class="return">
+                <button><a href="index.html">Return to Homepage</a></button>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="handles">
+            <a href=""><img src="images/linkedin.svg" alt="linkedin" width="1" height="1" loading="lazy"></a>
+            <a href=""><img src="images/facebook.svg" alt="facebook" width="1" height="1" loading="lazy"></a>
+            <a href=""><img src="images/twitter-x.svg" alt="twitter-X" width="1" height="1" loading="lazy"></a>
+            <p><span id="current-year"></span> | Victor Ongoli | Nairobi</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

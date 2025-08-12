@@ -1,0 +1,140 @@
+@media only screen and (min-width: 728px) {
+
+    header {
+        border: 1px solid black;
+        display: grid;
+        grid-template-columns: 1fr 2fr 0;
+        padding: 10px;
+        color: #000000;
+        background-color: rgb(2, 76, 23);
+    }
+
+    header img {
+        width: 30px;
+        height: 30px;
+        display: block;
+    }
+
+    header span {
+        margin-top: 5px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .hamburger {
+        border: none;
+        background: none;
+    }
+
+    .navigation {
+        display: block;
+        padding: 0;
+    }
+
+    .navigation ul {
+        list-style-type: none;
+        text-align: center;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navigation li {
+        flex: 1 1 100%;
+        padding: 15px;
+        border: 1px solid black;
+    }
+
+    .navigation li:hover {
+        background-color: rgb(171, 20, 20);
+        /* transition: background-color 0.5s ease; */
+        color: #000000;
+    }
+
+    .navigation {
+        background-color: black;
+        padding: 0;
+        
+    }
+
+    .navigation a {
+        color: #000000;
+        text-decoration: none;
+    }
+
+    main h2 {
+        color: #000000;
+        text-align: center;
+    }
+
+    .together {
+        text-align: center;
+    }
+
+    .ownership {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        gap: 7px;
+        .container {
+            border: 1px solid black;
+            background-color: rgb(1, 41, 1);
+            color: #000000;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    #home div img {
+        width: 100%;
+        height: 250px;
+        border-radius: 5px;
+        grid-area: image;
+        display: block;
+        
+    }
+
+    .property {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        gap: 7px;
+        .box {
+            border: 1px solid black;
+            background-color: rgb(1, 41, 1);
+            color: #000000;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    #land div img {
+        width: 100%;
+        height: 250px;
+        grid-area: image;
+        border-radius: 5px;
+        display: block;
+    }
+
+    .holding {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        gap: 7px;
+        .cube {
+            border: 1px solid black;
+            background-color: rgb(1, 41, 1);
+            color: #000000;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    #rentals div img {
+        width: 100%;
+        height: 250px;
+        grid-area: image;
+        border-radius: 5px;
+        display: block;
+    }
+}
