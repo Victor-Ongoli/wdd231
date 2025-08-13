@@ -1,121 +1,120 @@
 body {
     background-color: green;
-    margin: 0;
+    margin: 0
 }
 
 header {
-    background-color: rgb(1, 64, 1);
+    background-color: #014001
 }
 
 main {
     margin: 0;
-    padding: 0;
-    background-color: rgb(9, 179, 9);
     padding: 10px;
+    background-color: #09B309
 }
 
 main p {
-    font-family: "Roboto", sans-serif;;
+    font-family: "Roboto", sans-serif;
     font-size: 19px;
     font-weight: 700;
-    color: #000000;
+    color: #000
 }
 
 footer {
-    background-color: rgb(1, 64, 1);
+    background-color: #014001;
     color: #F8F8F2;
-    border: 1px solid black;
+    border: 1px solid #000;
     padding: 10px;
-    text-align: center;
+    text-align: center
 }
 
 footer a {
     text-decoration: none;
-    color: #F8F8F2;
+    color: #F8F8F2
 }
 
 footer a:hover {
-    background-color: white;
-    color: black;
+    background-color: #FFF;
+    color: #000;
     padding: 5px;
-    border-radius: 4px;
+    border-radius: 4px
 }
 
 .smaller {
-    padding-left: 10px;
+    padding-left: 10px
 }
 
 .social {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center
 }
 
 .handles img {
     width: 40px;
-    height: 30px;
+    height: 30px
 }
 
 .handles {
     padding: 10px 0 0 10px;
-    text-align: center;
+    text-align: center
 }
 
-h1, h2 {
-    font-family: "Lilita One", sans-serif;;
+h1,
+h2 {
+    font-family: "Lilita One", sans-serif;
     margin: 0;
-    border: 1px solid #000000;
-    background-color: rgb(2, 76, 23);
+    border: 1px solid #000;
+    background-color: #024C17;
     padding: 5px;
     color: #F8F8F2;
-    text-align: center;
+    text-align: center
 }
 
 .about {
     padding: 10px;
-    font-size: 17px;
+    font-size: 17px
 }
 
 .hero {
     background-image: url("../images/mainhero.webp");
     background-repeat: no-repeat;
     background-size: cover;
-    object-fit: cover;
     background-position: center;
-    border: 1px solid black;
+    border: 1px solid #000;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center
 }
 
 .mission {
     font-size: 17px;
-    padding: 10px;
+    padding: 10px
 }
 
 .slider {
     position: relative;
     width: 100%;
     margin: auto;
-    overflow: hidden;
+    overflow: hidden
 }
 
 .slides {
-    object-fit: cover;
+    object-fit: cover
 }
 
 .slider img {
     width: 100%;
     height: 400px;
-    display: none;
+    display: none
 }
 
 img.displaySlide {
     display: block;
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 1.5s
 }
 
 .slider button {
@@ -123,33 +122,33 @@ img.displaySlide {
     top: 50%;
     transform: translateY(-50%);
     font-size: 2rem;
-    background-color: #000000;
+    background-color: #000;
     color: #F8F8F2;
     border: none;
-    cursor: pointer;
+    cursor: pointer
 }
 
 .previous {
-    left: 0;
+    left: 0
 }
 
 .next {
-    right: 0;
+    right: 0
 }
 
 .why {
-    padding: 10px;
+    padding: 10px
 }
 
 #portfolio {
-    background-color: rgb(1, 64, 1);
+    background-color: #014001;
     border-radius: 5px;
-    color: #F8F8F2;
+    color: #F8F8F2
 }
 
 #portfolio p {
     color: #F8F8F2;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif
 }
 
 .form-fill {
@@ -157,14 +156,14 @@ img.displaySlide {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 
 .user {
     font-family: "Roboto", sans-serif;
-    background-color: rgb(1, 64, 1);
+    background-color: #014001;
     color: #F8F8F2;
-    border: 1px solid black;
+    border: 1px solid #000;
     border-radius: 12px;
     width: 100%;
     max-width: 900px;
@@ -173,13 +172,13 @@ img.displaySlide {
     flex-direction: column;
     gap: 20px;
     margin-bottom: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    transition: box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .2);
+    transition: box-shadow .3s ease
 }
 
 .user label {
     font-weight: 600;
-    font-size: 1em;
+    font-size: 1em
 }
 
 .user input[type="text"],
@@ -188,374 +187,264 @@ img.displaySlide {
 .user textarea,
 .user select {
     width: 100%;
-    padding: 12px 12px;
+    padding: 12px;
     border: 1px solid #ccc;
     border-radius: 8px;
     font-size: 1em;
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 
 .user textarea {
     min-height: 100px;
     resize: vertical;
-    font-family: "Gruppo", sans-serif;
+    font-family: "Gruppo", sans-serif
 }
 
 .user input[type="text"]:focus,
 .user input[type="email"]:focus,
-.user input[type="telephone"]:focus,
+.user input[type="tel"]:focus,
 .user textarea:focus,
 .user select:focus {
-    border-color: black;
-    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+    border-color: #000;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, .25)
 }
 
 .user input[type="submit"] {
     background-color: #07f0ae;
     font-family: "Gruppo", sans-serif;
-    color: #000000;
+    color: #000;
     padding: 14px 25px;
     border: none;
     border-radius: 8px;
     font-size: 1.1em;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+    transition: background-color .3s ease, transform .2s ease;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, .3);
     width: 100%;
     max-width: 200px;
     margin: 10px auto 0;
-    display: block; 
+    display: block
 }
 
 .user input[type="submit"]:hover {
     background-color: #0056b3;
-    font-family: "Gruppo", sans-serif;
+    font-family: "Gruppo", sans-serif
 }
 
-
-#home div {
-    margin: 4px;
-    overflow: hidden;
-    background-color: rgb(1, 64, 1);
-    color: #F8F8F2;
-    text-align: center;
-    border-radius: 10px;
-    padding: 0 10px 10px 10px;
-    column-gap: 10px;
-    display: grid;
-    grid-template-areas:
-    "title"
-    "image"
-    "address"
-    "price"
-    "built";
-}
-
-#home div h3 {
-    grid-area: title;
-    grid-gap: 5px;
-}
-
-#home div address {
-    grid-area: address;
-}
-
-#home div img {
-    width: 100%;
-    height: 250px;
-    border-radius: 5px;
-    display: block;
-    grid-area: image;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-#home div img:hover {
-    transform: scale(1.05);
-    cursor: pointer;
-}
-
-#home div p {
-    grid-area: price;
-    color: #F8F8F2;
-} 
-
-#home div h4 {
-    grid-area: built;
-}
-
-#land div {
-    margin: 4px;
-    overflow: hidden;
-    background-color: rgb(1, 64, 1);
-    color: #F8F8F2;
-    text-align: center;
-    border-radius: 10px;
-    padding: 0 10px 10px 10px;
-    column-gap: 10px;
-    display: grid;
-    grid-template-areas:
-        "title"
-        "image"
-        "address"
-        "price"
-        "built";
-}
-
-#land div h3 {
-    grid-area: title;
-    grid-gap: 5px;
-}
-
-#land div address {
-    grid-area: address;
-}
-
-#land div img {
-    width: 100%;
-    height: 250px;
-    grid-area: image;
-    display: block;
-    border-radius: 5px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-#land div img:hover {
-    transform: scale(1.05);
-    cursor: pointer;
-}
-
-#land div p {
-    grid-area: price;
-    color: #F8F8F2;
-}
-
-#land div h4 {
-    grid-area: built;
-}
-
+#home div,
+#land div,
 #rentals div {
     margin: 4px;
     overflow: hidden;
-    background-color: rgb(1, 64, 1);
+    background-color: #014001;
     color: #F8F8F2;
     text-align: center;
     border-radius: 10px;
-    padding: 0 10px 10px 10px;
-    display: grid;
-    grid-template-areas:
-    "title"
-    "image"
-    "address"
-    "price"
+    padding: 0 10px 10px;
+    gap: 10px;
+    display: grid
 }
 
+#home div h3,
+#land div h3,
 #rentals div h3 {
     grid-area: title;
-    grid-gap: 5px;
+    gap: 5px
 }
 
+#home div address,
+#land div address,
 #rentals div address {
-    grid-area: address;
+    grid-area: address
 }
 
+#home div img,
+#land div img,
 #rentals div img {
     width: 100%;
     height: 250px;
+    border-radius: 5px;
     display: block;
     grid-area: image;
-    border-radius: 5px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: transform .3s ease-in-out, box-shadow .3s ease-in-out
 }
 
+#home div img:hover,
+#land div img:hover,
 #rentals div img:hover {
     transform: scale(1.05);
-    cursor: pointer;
+    cursor: pointer
 }
 
+#home div p,
+#land div p,
 #rentals div p {
     grid-area: price;
-    color: #F8F8F2;
-} 
+    color: #F8F8F2
+}
+
+#home div h4,
+#land div h4 {
+    grid-area: built
+}
+
+#rentals div {
+    grid-template-areas: "title" "image" "address" "price"
+}
 
 .closing {
-    text-align: center;
+    text-align: center
 }
 
 .closing button {
-    background-color: rgb(2, 93, 20);
+    background-color: #025D14;
     color: #F8F8F2;
     padding: 13px;
-    border: none;
-    border: 1px solid black;
-    border-radius: 5px;
+    border: 1px solid #000;
+    border-radius: 5px
 }
 
 .closing button:hover {
-    background-color: white;
-    color: black;
+    background-color: #FFF;
+    color: #000
 }
 
 .return {
-    text-align: center;
-
+    text-align: center
 }
 
 .return button {
-    background-color: rgb(1, 64, 1);
+    background-color: #014001;
     padding: 10px;
     border-radius: 5px;
-    border: none;
+    border: none
 }
 
 .return a {
     color: #F8F8F2;
-    text-decoration: none;
-    
+    text-decoration: none
 }
 
 .return button:hover {
     background-color: #F8F8F2;
-    color: #000000;
+    color: #000
 }
 
-
-@media (max-width: 728px) {
+@media (max-width:728px) {
     header {
-        border: 1px solid black;
+        border: 1px solid #000;
         display: grid;
         grid-template-columns: 70px 2fr 45px;
-        padding: 10px;
+        padding: 10px
     }
 
     header img {
         width: 30px;
         height: 30px;
-        display: block;
+        display: block
     }
 
     header span {
         color: #F8F8F2;
         margin-top: 5px;
         font-weight: 700;
-        font-size: 20px;
+        font-size: 20px
     }
 
     .hamburger {
         border: none;
         background: none;
-        cursor: pointer;
+        cursor: pointer
     }
 
     .hamburger::before {
         content: "\2630";
         font-size: 1.5rem;
-        color: white;
+        color: #FFF
     }
 
     .hamburger.show::before {
         content: "\00D7";
         font-size: 2rem;
-        color: white;
+        color: #FFF
     }
 
     .navigation {
-        display: none;
+        display: none
     }
 
     .navigation.show {
-        display: block;
+        display: block
     }
 
     .navigation ul {
         list-style-type: none;
         margin: 0;
-        padding: 0;
+        padding: 0
     }
 
     .navigation li {
         display: flex;
         flex-direction: row;
-        border: 1px solid #000000;
+        border: 1px solid #000
     }
 
     .navigation li:hover {
-        background-color: black;
-        transition: background-color 0.5s ease;
+        background-color: #000;
+        transition: background-color .5s ease
     }
 
     .navigation li.current {
-        background-color: rgb(12, 12, 35);
+        background-color: #0C0C23
     }
 
     .navigation a {
         display: block;
-        padding: 0.5rem 10px;
+        padding: .5rem 10px;
         text-decoration: none;
         color: #F8F8F2;
         font-family: "Gruppo", sans-serif;
-        font-weight: 700;
+        font-weight: 700
     }
 
     .show li {
-        display: block;
+        display: block
     }
 }
 
-@media only screen and (min-width: 38rem) {
-    #home div {
-        padding: 10px 10px 10px 10px;
-        grid-template-areas:
-            "image title"
-            "image address"
-            "image price"
-            "image built";
-    }
+@media only screen and (min-width:38rem) {
 
-    #home div address {
-        grid-area: address;
-    }
-
-    #home div img {
-        width: 300px;
-        height: 300px;
-        grid-area: image;
-    }
-
+    #home div,
     #land div {
-        padding: 10px 10px 10px 10px;
-        grid-template-areas:
-            "image title"
-            "image address"
-            "image price"
-            "image built";
+        padding: 10px;
+        grid-template-areas: "image title" "image address" "image price" "image built"
     }
 
+    #home div address,
     #land div address {
-        grid-area: address;
+        grid-area: address
     }
 
+    #home div img,
     #land div img {
         width: 300px;
         height: 300px;
-        grid-area: image;
+        grid-area: image
     }
 
     #rentals div {
-        padding: 10px 10px 10px 10px;
-        grid-template-areas:
-            "image title"
-            "image address"
-            "image price";
+        padding: 10px;
+        grid-template-areas: "image title" "image address" "image price"
     }
 
     #rentals div address {
-        grid-area: address;
+        grid-area: address
     }
 
     #rentals div img {
         width: 300px;
         height: 300px;
-        grid-area: image;
+        grid-area: image
     }
 }
