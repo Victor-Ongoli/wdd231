@@ -83,6 +83,7 @@ h1, h2 {
     background-image: url("../images/mainhero.webp");
     background-repeat: no-repeat;
     background-size: cover;
+    object-fit: cover;
     background-position: center;
     border: 1px solid black;
     min-height: 100vh;
@@ -103,6 +104,10 @@ h1, h2 {
     width: 100%;
     margin: auto;
     overflow: hidden;
+}
+
+.slides {
+    object-fit: cover;
 }
 
 .slider img {

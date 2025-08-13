@@ -2,6 +2,8 @@ const npButton = document.querySelector('#openButton');
 const npBox = document.querySelector('#portfolio');
 const closeNp = document.querySelector('#closeButton');
 const slides = document.querySelectorAll(".slides img ");
+const prevButton = document.querySelector(".previous");
+const nextButton = document.querySelector(".next");
 
 let slideIndex = 0;
 let intervalId = null;

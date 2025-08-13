@@ -49,9 +49,6 @@
     .navigation li:hover {
         background-color: #32CD32;
         transition: background-color 0.5s ease;
-        a {
-            color: #000000;
-        }
     }
 
     .navigation {
