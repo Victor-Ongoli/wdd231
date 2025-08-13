@@ -5,7 +5,6 @@
         display: grid;
         grid-template-columns: 1fr 2fr 0;
         padding: 10px;
-        color: #000000;
         background-color: rgb(2, 76, 23);
     }
 
@@ -16,6 +15,8 @@
     }
 
     header span {
+        text-align: center;
+        color: #F8F8F2;
         margin-top: 5px;
         font-weight: 700;
         font-size: 20px;
@@ -42,29 +43,28 @@
     .navigation li {
         flex: 1 1 100%;
         padding: 15px;
-        border: 1px solid black;
+        /* border: 1px solid black; */
     }
 
     .navigation li:hover {
-        background-color: rgb(171, 20, 20);
-        /* transition: background-color 0.5s ease; */
-        color: #000000;
+        background-color: #32CD32;
+        transition: background-color 0.5s ease;
+        a {
+            color: #000000;
+        }
     }
 
     .navigation {
-        background-color: black;
+        background-color: #176717;
         padding: 0;
         
     }
 
     .navigation a {
-        color: #000000;
+        color: #F8F8F2;
         text-decoration: none;
-    }
-
-    main h2 {
-        color: #000000;
-        text-align: center;
+        font-weight: 600;
+        font-size: 17px;
     }
 
     .together {

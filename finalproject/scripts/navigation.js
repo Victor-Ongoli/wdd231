@@ -10,6 +10,20 @@ navButton.addEventListener
 
 document.querySelector("#current-year").textContent = `© ${currentYear}`;
 
+// wayfinding
+document.addEventListener('DOMContentLoaded', () => {
+    const navLinks = document.querySelectorAll('.navigation ul li a');
+    const currentPath = window.location.pathname;
+
+    navLinks.forEach(link => {
+        const linkHref = link.getAttribute('href');
+        if (currentPath.endsWith(linkHref)) {
+            navLinks.forEach(otherLink => otherLink.parentElement.classList.remove('current'));
+            link.parentElement.classList.add('current');
+        }
+    });
+});
+
 
 // user input display
 document.addEventListener('DOMContentLoaded', () => {

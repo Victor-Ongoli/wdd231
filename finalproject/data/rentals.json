@@ -22,13 +22,13 @@
             "Size": "1 bedroom",
             "location": "Mombasa",
             "price": "kshs.7,000,000",
-            "image": "images/apartment1.webp"
+            "image": "images/apartment4.webp"
         },
         {
             "Size": "3 bedroom",
             "location": "Nakuru",
             "price": "kshs.4,000,000",
-            "image": "images/apartment1.webp"
+            "image": "images/apartment5.webp"
         },
         {
             "Size": "AirBnB",

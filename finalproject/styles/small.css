@@ -1,26 +1,69 @@
-main {
-    margin: 4px;
+body {
     background-color: green;
+    margin: 0;
+}
+
+header {
+    background-color: rgb(1, 64, 1);
+}
+
+main {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(9, 179, 9);
     padding: 10px;
 }
 
-main h1 {
-    margin: 0;
-    border: 1px solid rgb(2, 97, 10);
-    background-color: rgb(2, 122, 25);
+main p {
+    font-family: ;
+    font-size: 19px;
+    font-weight: 700;
     color: #000000;
+    /* background-color: rgb(0, 55, 0);  */
+}
+
+footer {
+    background-color: rgb(1, 64, 1);
+    color: #F8F8F2;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.smaller {
+    padding-left: 10px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.handles img {
+    width: 40px;
+    height: 30px;
+}
+
+.handles {
+    padding: 10px 0 0 10px;
     text-align: center;
 }
 
-main p {
-    font-size: 18px;
+h1, h2 {
+    font-family: ;
+    margin: 0;
+    border: 1px solid #000000;
+    background: rgb(2, 76, 23);
+    padding: 5px;
+    color: #F8F8F2;
+    text-align: center;
 }
 
 .about {
     padding: 10px;
     font-size: 17px;
-    background-color: green;
-    color: #000000;
+    /* background-color: green; */
+    /* color: #000000; */
 }
 
 .hero {
@@ -37,15 +80,8 @@ main p {
 }
 
 .mission {
-    border: 1px solid black;
-    background-color: green;
     font-size: 17px;
-    color: #000000;
     padding: 10px;
-
-    h2 {
-        color: #000000;
-    }
 }
 
 /* sliding show */
@@ -73,8 +109,8 @@ img.displaySlide {
     top: 50%;
     transform: translateY(-50%);
     font-size: 2rem;
-    background-color: black;
-    color: #000000;
+    background-color: #000000;
+    color: #F8F8F2;
     border: none;
     cursor: pointer;
 }
@@ -88,15 +124,17 @@ img.displaySlide {
 }
 
 .why {
-    background-color: green;
     padding: 10px;
-    color: #000000;
-    h2 {
-        color: #000000;
-    }
-    h3 {
-        color: #000000;
-    }
+}
+
+#portfolio {
+    background-color: rgb(1, 64, 1);
+    border-radius: 5px;
+    color: #F8F8F2;
+}
+
+#portfolio p {
+    color: #F8F8F2;
 }
 
 .form-fill {
@@ -108,7 +146,9 @@ img.displaySlide {
 }
 
 .user {
-    background-color: green;
+    font-family: ;
+    background-color: rgb(1, 64, 1);
+    color: #F8F8F2;
     border: 1px solid black;
     border-radius: 12px;
     width: 100%;
@@ -117,14 +157,13 @@ img.displaySlide {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin: 0 auto;
+    margin-bottom: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.3s ease;
 }
 
 .user label {
     font-weight: 600;
-    color: #000000;
     font-size: 1em;
 }
 
@@ -153,11 +192,10 @@ img.displaySlide {
 .user select:focus {
     border-color: black;
     box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
-    /* outline: none; */
 }
 
 .user input[type="submit"] {
-    background-color: #013124;
+    background-color: #07f0ae;
     color: #000000;
     padding: 14px 25px;
     border: none;
@@ -177,19 +215,13 @@ img.displaySlide {
     background-color: #0056b3;
 }
 
-.founder {
-    h2 {
-        text-align: center;
-    }
-}
-
 
 /* houses display */
 #home div {
     margin: 4px;
     overflow: hidden;
-    background-color: black;
-    color: white;
+    background-color: rgb(1, 64, 1);
+    color: #F8F8F2;
     text-align: center;
     border-radius: 10px;
     padding: 0 10px 10px 10px;
@@ -205,7 +237,7 @@ img.displaySlide {
 }
 
 #home div h3 {
-    color: gold;
+    /* color: gold; */
     grid-area: title;
     grid-gap: 5px;
 }
@@ -230,6 +262,7 @@ img.displaySlide {
 
 #home div p {
     grid-area: price;
+    color: #F8F8F2;
 } 
 
 #home div h4 {
@@ -241,8 +274,9 @@ img.displaySlide {
 #land div {
     margin: 4px;
     overflow: hidden;
-    background-color: black;
-    color: white;
+    background-color: rgb(1, 64, 1);
+    color: #F8F8F2;
+    text-align: center;
     border-radius: 10px;
     padding: 0 10px 10px 10px;
     column-gap: 10px;
@@ -257,7 +291,7 @@ img.displaySlide {
 }
 
 #land div h3 {
-    color: gold;
+    /* color: gold; */
     grid-area: title;
     grid-gap: 5px;
 }
@@ -282,6 +316,7 @@ img.displaySlide {
 
 #land div p {
     grid-area: price;
+    color: #F8F8F2;
 }
 
 #land div h4 {
@@ -293,8 +328,9 @@ img.displaySlide {
 #rentals div {
     margin: 4px;
     overflow: hidden;
-    background-color: black;
-    color: white;
+    background-color: rgb(1, 64, 1);
+    color: #F8F8F2;
+    text-align: center;
     border-radius: 10px;
     padding: 0 10px 10px 10px;
     /* column-gap: 10px; */
@@ -308,7 +344,6 @@ img.displaySlide {
 }
 
 #rentals div h3 {
-    color: gold;
     grid-area: title;
     grid-gap: 5px;
 }
@@ -333,95 +368,49 @@ img.displaySlide {
 
 #rentals div p {
     grid-area: price;
+    color: #F8F8F2;
 } 
-/* 
-#rentals div h4 {
-    grid-area: built;
-} */
 
 /* dialog */
 .closing {
     text-align: center;
 
     button {
-        background-color: rgb(0, 0, 0);
-        color: white;
+        background-color: rgb(2, 93, 20);
+        color: #F8F8F2;
         padding: 13px;
         border: none;
+        border: 1px solid black;
         border-radius: 5px;
     }
     button:hover {
         background-color: white;
         color: black;
-    }
+     }
 }
 
 /* response return button */
-.received {
-    color: white;
-
-    h3 {
-        color: yellow;
-    }
-}
-
 .return {
     text-align: center;
 
 }
 
 .return button {
-    background-color: rgb(2, 40, 1);
+    background-color: rgb(1, 64, 1);
     padding: 10px;
     border-radius: 5px;
     border: none;
 
     a {
-        color: white;
+        color: #F8F8F2;
         text-decoration: none;
     }
 }
 
 .return button:hover {
-    background-color: rgb(53, 3, 95);
-    color: rgb(14, 11, 11);
+    background-color: #F8F8F2;
+    color: #000000;
 }
-
-
-/* footer */
-footer {
-    border: 1px solid black;
-    color: white;
-    padding: 10px;
-    background-color: rgb(2, 76, 23);
-}
-
-.smaller {
-        color: white;
-        padding-left: 10px;
-    }
-
-.social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.handles img {
-    width: 40px;
-    height: 30px;
-}
-
-.handles {
-    padding: 10px 0 0 10px;
-    text-align: center;
-}
-
-.handles a {
-    text-decoration: none;
-    color: black;
-}
-
 
 
 @media (max-width: 728px) {
@@ -431,8 +420,6 @@ footer {
         display: grid;
         grid-template-columns: 70px 2fr 45px;
         padding: 10px;
-        color: white;
-        background-color: rgb(2, 76, 23);
     }
 
     header img {
@@ -442,6 +429,7 @@ footer {
     }
 
     header span {
+        color: #F8F8F2;
         margin-top: 5px;
         font-weight: 700;
         font-size: 20px;
@@ -482,30 +470,32 @@ footer {
     .navigation li {
         display: flex;
         flex-direction: row;
-        background-color: rgb(62, 199, 62);
-        border: 1px solid #000;
+        /* background-color: rgb(62, 199, 62); */
+        border: 1px solid #000000;
     }
 
     .navigation li:hover {
         background-color: black;
-        /* transition: background-color 0.5s ease; */
-        color: white;
+        transition: background-color 0.5s ease;
+        a {
+            color: white;
+        }
     }
 
-/* .navigation li.current { */
-    /* background-color: rgb(12, 12, 35); */
-/* } */
+    .navigation li.current {
+        background-color: rgb(12, 12, 35);
+    }
 
     .navigation a {
         display: block;
         padding: 0.5rem 10px;
         text-decoration: none;
-        /* color: white; */
+        color: #F8F8F2;
         font-family: "Gruppo", sans-serif;
         font-weight: 700;
     }
 
-    /* .show li { */
-        /* display: block; */
-    /* } */
+    .show li {
+        display: block;
     }
+}

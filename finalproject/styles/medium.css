@@ -15,7 +15,7 @@
 
     #home div img {
         width: 300px;
-        height: 100%;
+        height: 300px;
         grid-area: image;
     }
 
@@ -34,7 +34,7 @@
 
     #land div img {
         width: 300px;
-        height: 100%;
+        height: 300px;
         grid-area: image;
     }
 
@@ -52,7 +52,7 @@
 
     #rentals div img {
         width: 300px;
-        height: 100%;
+        height: 300px;
         grid-area: image;
     }
 }
