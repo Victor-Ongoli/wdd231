@@ -76,13 +76,14 @@
         grid-template-columns: 1fr 1fr;
         text-align: center;
         gap: 7px;
-        .container {
-            border: 1px solid black;
-            background-color: rgb(1, 41, 1);
-            color: #000000;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
+    }
+
+    .container {
+        border: 1px solid black;
+        background-color: rgb(1, 41, 1);
+        color: #000000;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     #home div img {
@@ -99,13 +100,14 @@
         grid-template-columns: 1fr 1fr;
         text-align: center;
         gap: 7px;
-        .box {
-            border: 1px solid black;
-            background-color: rgb(1, 41, 1);
-            color: #000000;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
+    }
+
+    .box {
+        border: 1px solid black;
+        background-color: rgb(1, 41, 1);
+        color: #000000;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     #land div img {
@@ -121,13 +123,14 @@
         grid-template-columns: 1fr 1fr;
         text-align: center;
         gap: 7px;
-        .cube {
-            border: 1px solid black;
-            background-color: rgb(1, 41, 1);
-            color: #000000;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
+    }
+
+    .cube {
+        border: 1px solid black;
+        background-color: rgb(1, 41, 1);
+        color: #000000;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     #rentals div img {

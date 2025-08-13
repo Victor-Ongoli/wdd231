@@ -15,7 +15,7 @@ main {
 }
 
 main p {
-    font-family: ;
+    font-family: "Roboto", sans-serif;;
     font-size: 19px;
     font-weight: 700;
     color: #000000;
@@ -27,6 +27,19 @@ footer {
     color: #F8F8F2;
     border: 1px solid black;
     padding: 10px;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #F8F8F2;
+}
+
+footer a:hover {
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border-radius: 4px;
 }
 
 .smaller {
@@ -50,10 +63,10 @@ footer {
 }
 
 h1, h2 {
-    font-family: ;
+    font-family: "Lilita One", sans-serif;;
     margin: 0;
     border: 1px solid #000000;
-    background: rgb(2, 76, 23);
+    background-color: rgb(2, 76, 23);
     padding: 5px;
     color: #F8F8F2;
     text-align: center;
@@ -135,6 +148,7 @@ img.displaySlide {
 
 #portfolio p {
     color: #F8F8F2;
+    font-family: "Roboto", sans-serif;
 }
 
 .form-fill {
@@ -146,7 +160,7 @@ img.displaySlide {
 }
 
 .user {
-    font-family: ;
+    font-family: "Roboto", sans-serif;
     background-color: rgb(1, 64, 1);
     color: #F8F8F2;
     border: 1px solid black;
@@ -183,6 +197,7 @@ img.displaySlide {
 .user textarea {
     min-height: 100px;
     resize: vertical;
+    font-family: "Gruppo", sans-serif;
 }
 
 .user input[type="text"]:focus,
@@ -196,6 +211,7 @@ img.displaySlide {
 
 .user input[type="submit"] {
     background-color: #07f0ae;
+    font-family: "Gruppo", sans-serif;
     color: #000000;
     padding: 14px 25px;
     border: none;
@@ -213,6 +229,7 @@ img.displaySlide {
 
 .user input[type="submit"]:hover {
     background-color: #0056b3;
+    font-family: "Gruppo", sans-serif;
 }
 
 
@@ -374,19 +391,20 @@ img.displaySlide {
 /* dialog */
 .closing {
     text-align: center;
+}
 
-    button {
-        background-color: rgb(2, 93, 20);
-        color: #F8F8F2;
-        padding: 13px;
-        border: none;
-        border: 1px solid black;
-        border-radius: 5px;
-    }
-    button:hover {
-        background-color: white;
-        color: black;
-     }
+.closing button {
+    background-color: rgb(2, 93, 20);
+    color: #F8F8F2;
+    padding: 13px;
+    border: none;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.closing button:hover {
+    background-color: white;
+    color: black;
 }
 
 /* response return button */
@@ -400,11 +418,12 @@ img.displaySlide {
     padding: 10px;
     border-radius: 5px;
     border: none;
+}
 
-    a {
-        color: #F8F8F2;
-        text-decoration: none;
-    }
+.return a {
+    color: #F8F8F2;
+    text-decoration: none;
+    
 }
 
 .return button:hover {
@@ -477,9 +496,6 @@ img.displaySlide {
     .navigation li:hover {
         background-color: black;
         transition: background-color 0.5s ease;
-        a {
-            color: white;
-        }
     }
 
     .navigation li.current {
