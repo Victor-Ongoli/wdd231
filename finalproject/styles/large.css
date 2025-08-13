@@ -1,5 +1,4 @@
 @media only screen and (min-width: 728px) {
-
     header {
         border: 1px solid black;
         display: grid;
@@ -43,7 +42,6 @@
     .navigation li {
         flex: 1 1 100%;
         padding: 15px;
-        /* border: 1px solid black; */
     }
 
     .navigation li:hover {

@@ -19,7 +19,6 @@ main p {
     font-size: 19px;
     font-weight: 700;
     color: #000000;
-    /* background-color: rgb(0, 55, 0);  */
 }
 
 footer {
@@ -75,8 +74,6 @@ h1, h2 {
 .about {
     padding: 10px;
     font-size: 17px;
-    /* background-color: green; */
-    /* color: #000000; */
 }
 
 .hero {
@@ -98,7 +95,6 @@ h1, h2 {
     padding: 10px;
 }
 
-/* sliding show */
 .slider {
     position: relative;
     width: 100%;
@@ -238,7 +234,6 @@ img.displaySlide {
 }
 
 
-/* houses display */
 #home div {
     margin: 4px;
     overflow: hidden;
@@ -248,7 +243,6 @@ img.displaySlide {
     border-radius: 10px;
     padding: 0 10px 10px 10px;
     column-gap: 10px;
-
     display: grid;
     grid-template-areas:
     "title"
@@ -259,7 +253,6 @@ img.displaySlide {
 }
 
 #home div h3 {
-    /* color: gold; */
     grid-area: title;
     grid-gap: 5px;
 }
@@ -291,8 +284,6 @@ img.displaySlide {
     grid-area: built;
 }
 
-
-/* lands display */
 #land div {
     margin: 4px;
     overflow: hidden;
@@ -302,7 +293,6 @@ img.displaySlide {
     border-radius: 10px;
     padding: 0 10px 10px 10px;
     column-gap: 10px;
-
     display: grid;
     grid-template-areas:
         "title"
@@ -313,7 +303,6 @@ img.displaySlide {
 }
 
 #land div h3 {
-    /* color: gold; */
     grid-area: title;
     grid-gap: 5px;
 }
@@ -345,8 +334,6 @@ img.displaySlide {
     grid-area: built;
 }
 
-
-/* apartments display */
 #rentals div {
     margin: 4px;
     overflow: hidden;
@@ -355,8 +342,6 @@ img.displaySlide {
     text-align: center;
     border-radius: 10px;
     padding: 0 10px 10px 10px;
-    /* column-gap: 10px; */
-
     display: grid;
     grid-template-areas:
     "title"
@@ -393,7 +378,6 @@ img.displaySlide {
     color: #F8F8F2;
 } 
 
-/* dialog */
 .closing {
     text-align: center;
 }
@@ -412,7 +396,6 @@ img.displaySlide {
     color: black;
 }
 
-/* response return button */
 .return {
     text-align: center;
 
@@ -438,7 +421,6 @@ img.displaySlide {
 
 
 @media (max-width: 728px) {
-    
     header {
         border: 1px solid black;
         display: grid;
@@ -494,7 +476,6 @@ img.displaySlide {
     .navigation li {
         display: flex;
         flex-direction: row;
-        /* background-color: rgb(62, 199, 62); */
         border: 1px solid #000000;
     }
 
@@ -518,5 +499,63 @@ img.displaySlide {
 
     .show li {
         display: block;
+    }
+}
+
+@media only screen and (min-width: 38rem) {
+    #home div {
+        padding: 10px 10px 10px 10px;
+        grid-template-areas:
+            "image title"
+            "image address"
+            "image price"
+            "image built";
+    }
+
+    #home div address {
+        grid-area: address;
+    }
+
+    #home div img {
+        width: 300px;
+        height: 300px;
+        grid-area: image;
+    }
+
+    #land div {
+        padding: 10px 10px 10px 10px;
+        grid-template-areas:
+            "image title"
+            "image address"
+            "image price"
+            "image built";
+    }
+
+    #land div address {
+        grid-area: address;
+    }
+
+    #land div img {
+        width: 300px;
+        height: 300px;
+        grid-area: image;
+    }
+
+    #rentals div {
+        padding: 10px 10px 10px 10px;
+        grid-template-areas:
+            "image title"
+            "image address"
+            "image price";
+    }
+
+    #rentals div address {
+        grid-area: address;
+    }
+
+    #rentals div img {
+        width: 300px;
+        height: 300px;
+        grid-area: image;
     }
 }
